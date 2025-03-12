@@ -1,0 +1,2 @@
+-- AddForeignKey
+ALTER TABLE "AuditLog" ADD CONSTRAINT "AuditLog_entityId_fkey" FOREIGN KEY ("entityId") REFERENCES "Card"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
